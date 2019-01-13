@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Server", "Authentication.Server\Authentication.Server.csproj", "{A788579E-8B28-46AF-A1BB-9EAF8A94E9F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Server", "Authentication.Server\Authentication.Server.csproj", "{A788579E-8B28-46AF-A1BB-9EAF8A94E9F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1", "App1\App1.csproj", "{68CDBC4A-3664-414F-8D98-B25DA4875B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1", "App1\App1.csproj", "{68CDBC4A-3664-414F-8D98-B25DA4875B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App2", "App2\App2.csproj", "{8D35E730-B748-4337-A9BC-5A1F2C0C4902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App2", "App2\App2.csproj", "{8D35E730-B748-4337-A9BC-5A1F2C0C4902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{4DBBF44D-0C4C-4CFB-B387-9C58BC1AF8B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8D35E730-B748-4337-A9BC-5A1F2C0C4902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D35E730-B748-4337-A9BC-5A1F2C0C4902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D35E730-B748-4337-A9BC-5A1F2C0C4902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBBF44D-0C4C-4CFB-B387-9C58BC1AF8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBBF44D-0C4C-4CFB-B387-9C58BC1AF8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBBF44D-0C4C-4CFB-B387-9C58BC1AF8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBBF44D-0C4C-4CFB-B387-9C58BC1AF8B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

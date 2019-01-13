@@ -77,10 +77,11 @@ namespace Authentication.Server.Configuration
                 {
                     ClientId = "App1",
                     ClientName = "App1 Client",
-                    AllowAccessTokensViaBrowser = false,
+                    AllowAccessTokensViaBrowser = true,
                     RequireConsent = false,
                     AllowOfflineAccess = true,
                     AlwaysIncludeUserClaimsInIdToken = true,
+
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
@@ -107,7 +108,7 @@ namespace Authentication.Server.Configuration
                 {
                     ClientId = "App2",
                     ClientName = "App2 Client",
-                    AllowAccessTokensViaBrowser = false,
+                    AllowAccessTokensViaBrowser = true,
                     RequireConsent = false,
                     AllowOfflineAccess = true,
                     AlwaysIncludeUserClaimsInIdToken = true,
