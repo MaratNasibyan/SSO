@@ -29,15 +29,16 @@ namespace App1.Controllers
         [Authorize]
         public async Task<IActionResult> Privacy()
         {
-            //var token = await GetUserTokenAsync();
+            var token = await GetUserTokenAsync();
 
-            //using (var client = new HttpClient())
-            //{
-            //    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
-            //    var obj =  client.GetAsync("http://localhost:5003/api/values");
+                var obj =  client.GetAsync("http://localhost:5003/api/values").Result;
+                ViewBag.Values = await obj.Content.ReadAsStringAsync();
+            }
 
-            //}
             return View();
         }
         async Task<string> GetUserTokenAsync()
